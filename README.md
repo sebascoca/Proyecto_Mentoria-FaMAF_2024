@@ -113,8 +113,7 @@ _dataset_?, si no se eliminan, ¿serán imputados? ¿de qué forma y con qué
 criterio?. ¿Existen datos duplicados en el _dataset_?
 El análisis de los _outliers_ es encesario para comprender si realmente son
 atípicos o son casos excepcionales que deben tenerse en cuenta. ¿Qué porcentaje
-representan? ¿Los serán eliminamos o se mantiene cierto porcentaje de ellos y
-con qué criterio?
+representan? ¿Los datos serán eliminamos o se mantiene cierto porcentaje de ellos y con qué criterio?
 
 La inspección de las variables disponibles nos permitirá responder: ¿todos los
 datos son relevantes para el problema o podemos prescindir de algunos? ¿Será
