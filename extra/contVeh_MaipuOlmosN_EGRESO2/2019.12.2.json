@@ -1,0 +1,282 @@
+{
+  "jobIds": [
+    "556fc2e0-b1ef-41f4-8c71-686e93d9f4d7"
+  ],
+  "results": [
+    {
+      "jobId": "556fc2e0-b1ef-41f4-8c71-686e93d9f4d7",
+      "result": {
+        "data": {
+          "timestamp": "2024-08-14T15:11:40.14Z",
+          "rootActivityId": "c72fed08-be2b-41c8-aeeb-c59f72e82e71",
+          "descriptor": {
+            "Select": [
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G0",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "fecha"
+                    },
+                    "Calc": "G0",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "EstadoTrafico.fecha"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G1",
+                "Format": "0",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "cant"
+                    },
+                    "Calc": "G1",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "Sum(EstadoTrafico.cant)"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G2",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "Turnos",
+                      "Property": "nombre"
+                    },
+                    "Calc": "G2",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "Turnos.nombre"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G3",
+                "Format": "\"TRUE\";\"TRUE\";\"FALSE\"",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "activo"
+                    },
+                    "Calc": "G3",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "EstadoTrafico.activo"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G4",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "mark"
+                    },
+                    "Calc": "G4",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "EstadoTrafico.mark"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G5",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "diaSemana"
+                    },
+                    "Calc": "G5",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "EstadoTrafico.diaSemana"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G6",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "periodo"
+                    },
+                    "Calc": "G6",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "EstadoTrafico.periodo"
+              },
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G7",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "EstadoTrafico",
+                      "Property": "intervaloSegmento"
+                    },
+                    "Calc": "G7",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "EstadoTrafico.intervaloSegmento"
+              }
+            ],
+            "Expressions": {
+              "Primary": {
+                "Groupings": [
+                  {
+                    "Keys": [
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "fecha"
+                        },
+                        "Select": 0
+                      },
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "cant"
+                        },
+                        "Select": 1
+                      },
+                      {
+                        "Source": {
+                          "Entity": "Turnos",
+                          "Property": "nombre"
+                        },
+                        "Select": 2
+                      },
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "activo"
+                        },
+                        "Select": 3
+                      },
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "mark"
+                        },
+                        "Select": 4
+                      },
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "diaSemana"
+                        },
+                        "Select": 5
+                      },
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "periodo"
+                        },
+                        "Select": 6
+                      },
+                      {
+                        "Source": {
+                          "Entity": "EstadoTrafico",
+                          "Property": "intervaloSegmento"
+                        },
+                        "Select": 7
+                      }
+                    ],
+                    "Member": "DM0"
+                  }
+                ]
+              }
+            },
+            "Limits": {
+              "Primary": {
+                "Id": "L0",
+                "Top": {
+                  "Count": 1000
+                }
+              }
+            },
+            "Version": 2
+          },
+          "metrics": {
+            "Version": "1.0.0",
+            "Events": [
+              {
+                "Id": "e2405ec5-9988-4ed9-9a5f-d10377c48e43",
+                "Name": "Execute Semantic Query",
+                "Component": "DSE",
+                "Start": "2024-08-14T15:11:40.1407209Z",
+                "End": "2024-08-14T15:11:40.1875939Z"
+              },
+              {
+                "Id": "782ccd67-f233-4a07-b3e0-20d6bb0969a5",
+                "ParentId": "e2405ec5-9988-4ed9-9a5f-d10377c48e43",
+                "Name": "Execute DAX Query",
+                "Component": "DSE",
+                "Start": "2024-08-14T15:11:40.1407209Z",
+                "End": "2024-08-14T15:11:40.1875939Z",
+                "Metrics": {
+                  "RowCount": 0
+                }
+              },
+              {
+                "Id": "1FF0498F-8879-48C4-AB4A-C22F315A1CFF",
+                "ParentId": "782ccd67-f233-4a07-b3e0-20d6bb0969a5",
+                "Name": "Execute Query",
+                "Component": "AS",
+                "Start": "2024-08-14T15:11:40.167Z",
+                "End": "2024-08-14T15:11:40.19Z"
+              },
+              {
+                "Id": "F6CCB0D9-6153-4616-B757-C6B09657AE3D",
+                "ParentId": "1FF0498F-8879-48C4-AB4A-C22F315A1CFF",
+                "Name": "Serialize Rowset",
+                "Component": "AS",
+                "Start": "2024-08-14T15:11:40.19Z",
+                "End": "2024-08-14T15:11:40.19Z"
+              }
+            ]
+          },
+          "fromCache": false,
+          "dsr": {
+            "Version": 2,
+            "MinorVersion": 1,
+            "DS": [
+              {
+                "N": "DS0",
+                "PH": [
+                  {
+                    "DM0": []
+                  }
+                ],
+                "IC": true,
+                "HAD": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
